@@ -1,0 +1,861 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Life Savers', cursive;
+    /* border: solid 1px black;   */
+}
+
+
+/* inicio nav */
+.menu {
+    background-color: #fffef3;
+    padding: 1px 0;
+    text-align: left;
+    height: 70px;
+    margin: 0px;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #FF5403;
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    padding: 20px 30px;
+}
+
+.menu ul li a:hover {
+    color: rgb(188, 0, 110);
+}
+
+.contacto {
+    float: right;
+}
+
+/* .....................fin nav........ */
+
+
+/* .....................portada home.. */
+.animate-bg {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+}
+
+.animate-bg:after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(120deg, #ffffff, rgb(244, 61, 20), #ff8400);
+    background-size: 500%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    animation: BGgradient 9s ease infinite;
+}
+
+@keyframes BGgradient {
+    0% {
+        background-position: 0% 200%;
+    }
+
+    50% {
+        background-position: 200% 0%;
+    }
+
+    100% {
+        background-position: 0% 330%;
+    }
+}
+
+
+.encabezado-imagen {
+    background: linear-gradient(rgba(3, 1, 2, 0.4), rgba(3, 1, 2, 0.4)),
+        url(/Integrador-Untref-julio/images/h/h.adentro.zoom.jpg) no-repeat center center fixed;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 0.5px white;
+    text-shadow: -5px -5px 5px white;
+}
+
+
+.encabezado-imagen h1 {
+    font-size: 140px;
+    font-weight: 500;
+    color: #FF5403;
+    padding: 20px;
+    letter-spacing: 50px;
+}
+
+/* ....................fin portada home.. */
+
+
+/* .........................main.................... */
+.contenedor {
+    display: block;
+}
+
+.contenedor-imagenes img {
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.espacio-descanso {
+    background-color: #FCF0ED;
+    height: 300px;
+}
+
+.card-group {
+    height: auto;
+    width: 100%;
+}
+
+
+/* el padding es el borde las tarjeta lpm */
+.card {
+    padding: 2px;
+    margin: 30px;
+    box-shadow: 0px 2px 10px rgba(1, 1, 2, 1);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgb(255, 183, 1);
+    transform: translateY(-3%);
+}
+
+.card-body {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.card-title {
+    color: #000000;
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.marcas {
+    padding: 10px;
+    background-color: #FCF0ED;
+    text-align: center;
+    height: auto;
+    font-size: 30px;
+}
+
+.marcas h1 {
+    padding: 40px;
+}
+
+
+.Productos-1 {
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom right, #ffffff, #ed7700, #fa5401);
+    padding: 40px;
+    height: 650px;
+}
+
+.Productos {
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom right, #ffffff, #ed7700, #fa5401);
+    padding: 40px;
+    height: 650px;
+    /* padding: 10px; esto es el borde de abajo naranja de la tarjetas */
+}
+
+.hace-pedido {
+    height: 500px;
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.seniora img {
+    height: 1%;
+    padding: 3px;
+}
+
+.texto-pedido {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+
+.texto-pedido h1 {
+    width: 100%;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+}
+
+.texto-pedido p {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+ol,
+ul {
+    padding-left: 0;
+}
+
+/* empieza footer */
+
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+}
+
+.fa-phone:before {
+    content: "\f095";
+}
+
+.fas {
+    font-family: 'Life Savers', cursive;
+    /* font-family: "Font Awesome 5 Free"; */
+}
+
+.fas {
+    font-weight: 900;
+}
+
+
+
+
+/* aca lado derecho azul */
+
+.ubicacion {
+    display: flex;
+    height: 310px;
+    width: 100%;
+}
+
+.mapa {
+    height: auto;
+    width: 50%;
+    margin: 10px;
+}
+
+/* si saco el 100% aparece scroll horizontal */
+
+.info {
+    display: flex;
+    height: auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A68FF;
+    color: hsl(0, 0%, 100%);
+    margin: 10px;
+}
+
+
+li {
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'Life Savers', cursive;
+    /* font-family: 'Foco Lite', 'Open Sans', sans-serif; */
+    margin: 0;
+    list-style: none;
+}
+
+
+
+
+/* SOCIAL MEDIAS */
+.social-media {
+    display: block;
+    width: 100%;
+}
+
+.social-media a {
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 15px;
+}
+
+
+.pie {
+    display: inline-block;
+    height: 80px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #FA9401;
+    font-family: 'Do Hyeon', sans-serif;
+    /* font-family: 'Sancreek', cursive; */
+    padding: 2px;
+}
+
+.pie p {
+    font-family: 'Life Savers', cursive;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    color: #000000;
+
+}
+
+
+/* WhatsApp Button */
+.qlwapp-toggle {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 9px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.30em;
+}
+
+/* WhatsApp Button */
+
+/* SOCIAL MEDIAS */
+
+@media (min-width: 320px) and (max-width: 576px) {
+
+    .encabezado {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: row;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul li a {
+        flex-direction: row;
+        padding: 2px;
+    }
+
+
+    .encabezado-imagen {
+        display: flex;
+        font-size: 10px;
+        height: 250px;
+    }
+
+    .encabezado-imagen h1 {
+        font-size: 27px;
+        color: #FA9401;
+        padding: 20px;
+        letter-spacing: 15px;
+    }
+
+    .marcas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        width: auto;
+    }
+
+    .marcas h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .contenedor-imagenes img {
+        text-align: flex;
+        height: 80px;
+        width: 80px;
+    }
+
+    .Productos-1 {
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .Productos-1 h1 {
+        font-size: 20px;
+    }
+
+    .Productos {
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .Productos h1 {
+        font-size: 20px;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card {
+        margin: 0;
+        padding: 0;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+
+    .card-body {
+        width: 100%;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .card img {
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    .card .card-title {
+        font-size: 10px;
+    }
+
+    .hace-pedido {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .texto-pedido h1 {
+        flex-direction: column-reverse;
+        font-size: 20px;
+        text-align: center;
+        color: #000000;
+    }
+
+
+    .texto-pedido p {
+        flex-direction: column-reverse;
+        font-size: 16px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .seniora img {
+        height: auto;
+    }
+
+
+    .ubicacion {
+        display: block;
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .social-media {
+        display: flex;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .ubicacion {
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        text-align: center;
+        height: auto;
+    }
+
+    .mapa {
+        display: none;
+    }
+
+
+    .social-media {
+        display: flex;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info ul li {
+        font-size: 20px;
+    }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .encabezado {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: row;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul li a {
+        flex-direction: row;
+        padding: 2px;
+    }
+
+
+    .encabezado-imagen {
+        display: flex;
+        font-size: 10px;
+        height: 250px;
+    }
+
+    .encabezado-imagen h1 {
+        font-size: 35px;
+        color: #FA9401;
+        padding: 20px;
+        letter-spacing: 10px;
+    }
+
+    .marcas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        width: auto;
+    }
+
+    .marcas h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .contenedor-imagenes p img {
+        text-align: flex;
+        height: 80px;
+        width: 80px;
+    }
+
+
+    .Productos-1 {
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .Productos-1 h1 {
+        font-size: 20px;
+    }
+
+    .Productos {
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .Productos h1 {
+        font-size: 20px;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        margin: 30px;
+        align-items: center;
+    }
+
+    .card img {
+        width: 100px;
+        margin-top: 5px;
+    }
+
+
+    .card-body {
+        width: 100px;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .card img {
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    .card .card-title {
+        font-size: 10px;
+    }
+
+
+    .hace-pedido {
+        display: flex;
+        height: 300px;
+    }
+
+    .texto-pedido h1 {
+        flex-direction: flex;
+        font-size: 20px;
+        text-align: center;
+        color: #000000;
+    }
+
+
+    .texto-pedido p {
+        flex-direction: flex;
+        font-size: 16px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .seniora img {
+        height: auto;
+    }
+
+
+    .ubicacion {
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        text-align: center;
+        height: auto;
+    }
+
+    .mapa {
+        display: flex;
+        margin: 10px;
+        height: auto;
+    }
+
+
+    .social-media {
+        display: flex;
+        padding: 1px;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .encabezado {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: row;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul li a {
+        flex-direction: row;
+        padding: 2px;
+    }
+
+
+    .encabezado-imagen {
+        display: flex;
+        font-size: 10px;
+        height: 250px;
+    }
+
+    .encabezado-imagen h1 {
+        font-size: 35px;
+        color: #FA9401;
+        padding: 20px;
+        letter-spacing: 5px;
+    }
+
+    .marcas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        width: auto;
+    }
+
+    .marcas h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .contenedor-imagenes p img {
+        text-align: flex;
+        height: 100px;
+        width: 100px;
+    }
+
+
+    .Productos-1 {
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .Productos-1 h1 {
+        font-size: 20px;
+    }
+
+    .Productos {
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .Productos h1 {
+        font-size: 20px;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        align-items: center;
+    }
+
+    .card img {
+        width: 100px;
+    }
+
+
+    .card-body {
+        width: 100px;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .card img {
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    .card .card-title {
+        font-size: 10px;
+    }
+
+    .hace-pedido {
+        height: 300px;
+    }
+
+    .hace-pedido h1 {
+        font-size: 30px;
+        height: auto;
+        text-align: center;
+    }
+
+    .hace-pedido p {
+        font-size: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .seniora img {
+        height: 300px;
+    }
+
+    .ubicacion {
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        text-align: center;
+        height: auto;
+    }
+
+    .mapa {
+        display: flex;
+        margin: 10px;
+        height: auto;
+    }
+
+
+    .social-media {
+        display: flex;
+        padding: 1px;
+        justify-content: center;
+    }
+
+}

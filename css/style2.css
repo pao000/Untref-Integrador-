@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Life Savers', cursive;
+    /* border: solid 1px black;  */
+}
+
+
+/* inicio nav */
+.menu {
+    background-color: #fffef3;
+    padding: 1px 0;
+    text-align: left;
+    height: 70px;
+    margin: 0px;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #FF5403;
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    padding: 20px 30px;
+}
+
+.menu ul li a:hover {
+    color: rgb(188, 0, 110);
+}
+
+.contacto {
+    float: right;
+}
+
+/* .....................fin nav........ */
+
+.mb-3 {
+    display: block;
+    background: linear-gradient(to bottom right, #ffffff, #ed7700, #fa5401);
+    padding: 20px;
+    color: #FCF0ED;
+    text-align: center;
+}
+
+.descript {
+    font-size: 20px;
+    text-align: justify;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin: 40px;
+}
+
+.descript p {
+    font-weight: lighter;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: left;
+}
+
+.nuestra-forrajeria {
+    background: linear-gradient(to bottom right, #ffffff, #ed7700, #fa5401);
+    height: 400px;
+    margin: 0px;
+    border: 30px;
+    padding: 20px;
+}
+
+.card-group {
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+}
+
+.card {
+    margin: 1rem;
+    padding: 0.1em;
+}
+
+.card {
+    padding: 2px;
+    margin: 30px;
+    box-shadow: 0px 2px 10px rgba(1, 1, 2, 1);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgb(255, 183, 1);
+    transform: translateY(-3%);
+}
+
+
+.card-img-top {
+    border-style: solid;
+    border-color: #FCF0ED;
+    border-width: 6px;
+}
+
+
+
+
+footer .social-media {
+    width: 100%;
+    margin: 0.3rem 0;
+    padding-bottom: 0.1rem;
+}
+
+
+.social-media {
+    display: block;
+    width: 100%;
+}
+
+.social-media a {
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 15px;
+}
+
+
+.pie {
+    display: inline-block;
+    height: 80px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #FA9401;
+    font-family: 'Sancreek', cursive;
+    padding: 2px;
+}
+
+.pie p {
+    color: #000000;
+
+}
+
+/* WhatsApp Button */
+
+.qlwapp-toggle {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 9px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.30em;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+
+    .encabezado {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: row;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul li a {
+        flex-direction: row;
+        padding: 2px;
+    }
+
+    .mb-3 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .descript p {
+        font-size: 15px;
+    }
+
+    .nuestra-forrajeria {
+        display: block;
+        height: auto;
+    }
+
+    .card-group {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+    }
+}
