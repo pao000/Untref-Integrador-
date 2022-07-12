@@ -154,7 +154,7 @@ footer .social-media {
     color: #FFF;
     border-radius: 50px;
     text-align: center;
-    font-size: 30px;
+    font-size: 32px;
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
 }
@@ -164,7 +164,7 @@ footer .social-media {
     display: var(--fa-display, inline-block);
     height: 1em;
     overflow: visible;
-    vertical-align: -.30em;
+    vertical-align: -.29em;
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
