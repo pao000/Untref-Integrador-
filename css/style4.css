@@ -384,3 +384,16 @@ textarea.input {
         padding: 0.45rem 1.2rem;
     }
 }
+
+.input-container span:before,
+.input-container span:after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: #FF5403;
+    top: 50%;
+    transform: translateY(-50%);
+}
