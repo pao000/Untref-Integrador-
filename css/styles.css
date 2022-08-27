@@ -74,7 +74,7 @@
 
 .encabezado-imagen {
     background: linear-gradient(rgba(3, 1, 2, 0.4), rgba(3, 1, 2, 0.4)),
-    url(../images/h/h.adentro.zoom.jpg) no-repeat center center fixed;
+        url(../images/h/h.adentro.zoom.jpg) no-repeat center center fixed;
     height: 400px;
     background-size: cover;
     display: flex;
@@ -100,6 +100,10 @@
 /* .........................main.................... */
 .contenedor {
     display: block;
+}
+
+#TITLE {
+    margin-top: 10px;
 }
 
 .contenedor-imagenes img {
