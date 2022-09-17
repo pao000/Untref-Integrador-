@@ -102,6 +102,7 @@
     display: block;
 }
 
+<<<<<<< HEAD
 .visitas {
     margin-top: 70;
     justify-content: center;
@@ -120,6 +121,12 @@
 }
 
 
+=======
+#TITLE {
+    margin-top: 10px;
+}
+
+>>>>>>> f316c4cba8a9304f6dfc6ffcbe49932c5bec0928
 .contenedor-imagenes img {
     display: inline-block;
     padding: 5px 5px;
