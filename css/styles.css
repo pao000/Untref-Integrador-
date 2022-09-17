@@ -74,7 +74,7 @@
 
 .encabezado-imagen {
     background: linear-gradient(rgba(3, 1, 2, 0.4), rgba(3, 1, 2, 0.4)),
-    url(../images/h/h.adentro.zoom.jpg) no-repeat center center fixed;
+        url(../images/h/h.adentro.zoom.jpg) no-repeat center center fixed;
     height: 400px;
     background-size: cover;
     display: flex;
@@ -101,6 +101,24 @@
 .contenedor {
     display: block;
 }
+
+.visitas {
+    margin-top: 70;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FF5403;
+}
+
+
+.btn-outline-success{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    color: #ff8400;
+}
+
 
 .contenedor-imagenes img {
     display: inline-block;
